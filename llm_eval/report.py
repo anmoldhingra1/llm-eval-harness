@@ -1,7 +1,6 @@
 """Report generation for evaluation results."""
 
 import json
-from typing import Literal
 
 from llm_eval.test_case import EvalResults
 
@@ -106,8 +105,8 @@ class ReportGenerator:
             "",
             "## Summary",
             "",
-            f"| Metric | Value |",
-            f"| --- | --- |",
+            "| Metric | Value |",
+            "| --- | --- |",
             f"| Total Tests | {summary['total']} |",
             f"| Passed | {summary['passed']} |",
             f"| Failed | {summary['failed']} |",

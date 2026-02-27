@@ -2,7 +2,6 @@
 
 import json
 import re
-from typing import Any
 
 
 def exact_match(actual: str, expected: str, metadata: dict) -> dict:

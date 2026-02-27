@@ -60,14 +60,14 @@ def example_basic_evaluation() -> None:
     }
 
     # Run evaluation
-    results = harness.run(chatbot_outputs)
+    harness.run(chatbot_outputs)
 
     # Print terminal report
     print(harness.report(format="terminal"))
 
     # Print summary
     summary = harness.summary()
-    print(f"\nQuick Summary:")
+    print("\nQuick Summary:")
     print(f"  Pass Rate: {summary['pass_rate']:.1%}")
     print(f"  Average Score: {summary['average_score']:.2f}")
 
@@ -106,7 +106,7 @@ def example_custom_evaluator() -> None:
         "How is your experience with our product?": "It's been absolutely fantastic! The product is excellent and works wonderfully.",
     }
 
-    results = harness.run(outputs)
+    harness.run(outputs)
     print(harness.report(format="terminal"))
 
 
@@ -139,7 +139,7 @@ def example_multiple_formats() -> None:
         "Say hello": "Hello! How can I help you?",
     }
 
-    results = harness.run(outputs)
+    harness.run(outputs)
 
     # Terminal format
     print("\n--- TERMINAL FORMAT ---")
@@ -197,7 +197,7 @@ def example_batch_evaluation() -> None:
         "Define photosynthesis": "Photosynthesis is a process used by plants to convert light energy into chemical energy for growth",
     }
 
-    results = harness.run(model_outputs)
+    harness.run(model_outputs)
     print(harness.report(format="terminal"))
 
 

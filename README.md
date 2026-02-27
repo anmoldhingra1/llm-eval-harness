@@ -1,6 +1,7 @@
 # LLM Eval Harness
 
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![CI](https://github.com/anmoldhingra1/llm-eval-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/anmoldhingra1/llm-eval-harness/actions)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A minimal, extensible evaluation harness for LLM applications. Define test cases, run evaluations, and get structured reports with built-in and custom evaluators.
@@ -235,9 +236,31 @@ llm-eval-harness/
 └── tests/
 ```
 
-## Contributing
+## Development
 
-Contributions welcome! Open issues and pull requests on GitHub.
+### Setting Up for Development
+
+Clone and install with dev dependencies:
+```bash
+git clone https://github.com/anmoldhingra1/llm-eval-harness.git
+cd llm-eval-harness
+pip install -e .[dev]
+```
+
+### Running Tests
+
+```bash
+pytest tests/ -v
+```
+
+### Linting
+
+```bash
+ruff check . --fix
+black .
+```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ## License
 
