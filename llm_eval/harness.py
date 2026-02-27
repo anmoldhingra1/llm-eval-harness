@@ -8,6 +8,8 @@ from llm_eval.report import ReportGenerator
 
 class EvalHarness:
     """
+from __future__ import annotations
+
     Evaluation harness for testing LLM outputs.
 
     The harness manages test cases, runs evaluations against model outputs,
