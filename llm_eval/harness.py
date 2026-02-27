@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 """Main evaluation harness for LLM testing."""
 
 from typing import Literal
@@ -8,7 +10,6 @@ from llm_eval.report import ReportGenerator
 
 class EvalHarness:
     """
-from __future__ import annotations
 
     Evaluation harness for testing LLM outputs.
 
