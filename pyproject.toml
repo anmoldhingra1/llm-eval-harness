@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
 authors = [
-    {name = "Anmol Dhingra", email = "hello@anmol.one"}
+    {name = "Anmol Dhingra", email = "anmol@rerato.com"}
 ]
 keywords = ["llm", "evaluation", "testing", "ai", "nlp", "benchmarking"]
 classifiers = [
@@ -27,7 +27,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/anmoldhingra1/llm-eval-harness"
+Homepage = "https://trivana.ai"
 Documentation = "https://github.com/anmoldhingra1/llm-eval-harness#readme"
 Repository = "https://github.com/anmoldhingra1/llm-eval-harness.git"
 Issues = "https://github.com/anmoldhingra1/llm-eval-harness/issues"

@@ -8,6 +8,8 @@ A minimal, extensible evaluation harness for LLM applications. Define test cases
 
 ## Overview
 
+This repo is a small public proof point for a production AI habit: generated output needs regression tests, structured checks, and repeatable quality gates. For Rerato-style experiences, that matters because a host needs to stay grounded in the source, respect format constraints, and fail visibly when quality drops.
+
 LLM Eval Harness provides:
 - Simple test case definition (input, expected output, evaluator)
 - Built-in evaluators for common scenarios (exact match, semantic similarity, JSON validity, toxicity)
@@ -17,10 +19,20 @@ LLM Eval Harness provides:
 
 Perfect for evaluating chatbots, content generation systems, code-generating LLMs, and any AI application that produces text output.
 
+## What It Shows
+
+- Test cases as first-class objects
+- Built-in and custom evaluators
+- JSON and terminal reports
+- Batch evaluation against model outputs
+- Regression-test shape for LLM application quality
+
 ## Installation
 
 ```bash
-pip install llm-eval-harness
+git clone https://github.com/anmoldhingra1/llm-eval-harness.git
+cd llm-eval-harness
+pip install -e ".[dev]"
 ```
 
 ## Quick Start
@@ -268,4 +280,4 @@ MIT License - see LICENSE file for details.
 
 ---
 
-Built by [Anmol Dhingra](https://anmol.one)
+Built by [Anmol Dhingra](https://github.com/anmoldhingra1), founder of [Rerato](https://trivana.ai).
